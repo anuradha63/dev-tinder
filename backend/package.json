@@ -1,0 +1,29 @@
+{
+  "name": "dev-tinder",
+  "version": "1.0.0",
+  "description": "Tinder for developers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "backend"
+  ],
+  "author": "anuradhaharale",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.3",
+    "socket.io": "^4.8.1",
+    "validator": "^13.15.15"
+  }
+}
