@@ -3,6 +3,8 @@
 This keeps the backend routes as original (`/login`, `/signup`, `/profile/view`, etc.).
 Only environment variables were added so the same backend can run globally.
 
+Live: https://dev-tinder-1-ydtg.onrender.com
+
 ## Backend env
 Create `backend/.env`:
 
