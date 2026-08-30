@@ -25,7 +25,11 @@ authRouter.post("/signup", async (req, res) => {
     const savedUser = await user.save();
 
     const token = await savedUser.getJWT();
-    res.cookie("token", token);
+    res.cookie("token", token, {
+     httpOnly: true,
+     secure: true,
+     sameSite: "none",
+    });
 
     res.json({ message: "User Added successfully...", data: savedUser });
   } catch (err) {
@@ -50,7 +54,11 @@ authRouter.post("/login", async (req, res) => {
       const token = await user.getJWT();
 
       // Add the token to cookie and send response back to client
-      res.cookie("token", token);
+      res.cookie("token", token, {
+       httpOnly: true,
+       secure: true,
+       sameSite: "none",
+      });
 
       res.send(user);
     } else {
